@@ -1,4 +1,5 @@
-// Variabili
+
+
 const calcButton = document.getElementById("calc-button");
 
 calcButton.addEventListener('click', function() {
@@ -25,7 +26,7 @@ calcButton.addEventListener('click', function() {
             ticketPrice = (ticketPrice - ( (ticketPrice * 35) / 100) );
         }
     
-        document.getElementById('ticket-price').innerHTML = ticketPrice.toFixed( 2 );
+        document.getElementById('ticket-price').innerHTML = ticketPrice.toFixed( 2 ) + '€';
     }    
 
 });
