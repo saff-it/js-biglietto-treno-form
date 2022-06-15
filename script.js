@@ -2,8 +2,8 @@
 const calcButton = document.getElementById("calc-button");
 
 calcButton.addEventListener('click', function() {
-    const userDistance = parseInt( document.querySelector('user-km-num') );
-    const userAge = parseInt( document.querySelector('user-age') );
+    const userDistance = parseInt( document.getElementById('user-km-num').value );
+    const userAge = parseInt( document.getElementById('user-age').value );
     let ticketPrice = userDistance * 0.26;
 
     console.log(userDistance, userAge, ticketPrice);
