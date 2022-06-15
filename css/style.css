@@ -28,10 +28,14 @@ button:hover{
     font-weight: 900;
 }
 
+#ticket-discount{
+    text-decoration: underline;
+}
+
 div.container{
     margin-top: 180px;
     border-radius: 5px;
     border: 5px solid black;
-    height: 450px;
+    height: 500px;
     background-color: rgb(235, 204, 204);
 }
