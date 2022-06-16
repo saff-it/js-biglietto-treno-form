@@ -21,12 +21,12 @@ calcButton.addEventListener('click', function() {
     
         if (userAge < 18) {
             ticketPrice = (ticketPrice - ( (ticketPrice * 15) / 100) );
-            let showDiscount = document.getElementById('ticket-discount').innerHTML += 'invece di ' + ticketFullPrice + '€ ' + 'con lo sconto del 15% per i minorenni';
+            document.getElementById('ticket-discount').innerHTML = 'invece di ' + ticketFullPrice.toFixed( 2 ) + '€ ' + 'con lo sconto del 15% per i minorenni';
             
             
         } else if (userAge > 65) {
             ticketPrice = (ticketPrice - ( (ticketPrice * 35) / 100) );
-            let showDiscount = document.getElementById('ticket-discount').innerHTML += 'invece di ' + ticketFullPrice + '€ ' + 'con lo sconto del 35% per gli over 65';
+            document.getElementById('ticket-discount').innerHTML = 'invece di ' + ticketFullPrice.toFixed( 2 ) + '€ ' + 'con lo sconto del 35% per gli over 65';
         }
     
         document.getElementById('ticket-price').innerHTML = ticketPrice.toFixed( 2 ) + '€';
@@ -36,7 +36,24 @@ calcButton.addEventListener('click', function() {
 
 
 
-
+/**
+ * METODO
+ * 
+ * 
+ * PROPRIETÀ
+ * 
+ * 
+ * ATTRIBUTI
+ * 
+ * 
+ * ARGOMENTI
+ * 
+ * 
+ * VALORI
+ * 
+ * 
+ * 
+ */
 
 
 
